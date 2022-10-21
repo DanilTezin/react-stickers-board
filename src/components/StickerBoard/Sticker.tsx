@@ -1,3 +1,5 @@
+import './style.css'
+
 export type StickerTypes ={
     name: string,
     image: string
@@ -5,8 +7,8 @@ export type StickerTypes ={
 
 const Sticker = ({name, image}: StickerTypes) =>{
     return (
-        <div>
-            <img src={image} alt="" />
+        <div className="wrapSticker">
+            <img className="sticker" src={image} alt="" />
         </div>
     )
 }

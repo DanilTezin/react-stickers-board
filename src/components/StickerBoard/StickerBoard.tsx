@@ -1,15 +1,11 @@
 import Sticker from "./Sticker";
 import { stickerSet } from './stickerSet';
-import styles from './style.css'
+import './style.css'
 
 
-type StickerBoardTypes ={
-
-}
-
-const StickerBoard: StickerBoardTypes = () =>{
+const StickerBoard = () =>{
     return(
-        <div>
+        <div className="board">
             {
                 stickerSet.map((sticker)=>{
                     return <Sticker name={sticker.name} image={sticker.image}/>

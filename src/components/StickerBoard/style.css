@@ -3,6 +3,10 @@
     width: 30px;
 }
 
+.wrapSticker:active {
+    transform: scale(1.2);
+}
+
 .wrapSticker {
     background-color: white;
     border-radius: 0.5rem;
@@ -14,9 +18,61 @@
 
 .board {
     background-color: rgb(249, 249, 249);
-    width: calc(300px + 10vw);
-    border-radius: 0.5rem;
+    width: calc(220px + 1vw);
+    border-radius: 2rem;
     padding: 12px 24px;
     display: flex;
+    justify-content: space-around;
+}
+
+.fakepost {
+    background-color: rgb(249, 249, 249);
+    width: calc(220px + 1vw);
+    height: 200px;
+    border-radius: 1rem;
+    padding: 12px 24px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contentFakePost {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ratings {
+    margin: 10px 0px;
+    width: calc(220px + 1vw);
+    background-color: rgb(227, 227, 227);
+    padding: 10px 20px;
+    border-radius: 0.4rem;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.ratings>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ratingBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countRatings {
+    display: flex;
+    justify-content: center;
+}
+
+.countRatings>div {
+    text-align: center;
+    border-radius: 0.4rem;
+    width: 20px;
+    background-color: #bbb;
+    font-size: 10px;
+    transition: all 0.5s;
 }
